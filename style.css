@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker:regular);
+@import url(https://fonts.googleapis.com/css?family=Rubik+Moonrocks:regular);
+@import url(https://fonts.googleapis.com/css?family=Holtwood+One+SC:regular);
+
+
+
+
+
+
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+   background-color:tomato;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+    height:100vh;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+
+    width:80%;
+  
+    padding:5rem 2rem;
+
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 2rem 2rem 2rem rgba(0,0,0,0.4);
+
+    border-radius: 1rem;
+}
+
+.flames__container{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    padding:5rem 3rem;
+}
+
+.name__box{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap:1rem;
+}
+
+label{
+    font-size: 3rem;
+    font-family:Permanent Marker;
+    text-align: center;
+}
+
+#user__input,
+#partner__name--input{
+    padding:4rem 4rem;
+    font-size:2rem;
+    font-family: oswald;
+
+    border-radius: 1.5rem;
+
+    border:none;
+    outline: none;
+
+    box-shadow:0 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+
+
+}
+
+.errText{
+    font-size: 1.5rem;
+    color:red;
+    text-align: center;
+    font-family:Permanent Marker;
+   
+}
+
+.check__btn{
+    align-self:center;
+    height:5rem;
+    width:15rem;
+
+    font-family:Permanent Marker;
+    font-size:3rem;
+
+    border:none;
+    outline:none;
+
+    border-radius: 1rem;
+
+    background-color:#333;
+    color:white;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.check__btn:hover{
+    transform: scale(0.95);
+    color:rgb(14, 129, 216);
+}
+
+.result__cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Holtwood One SC;
+
+    
+}
+
+.result{
+    font-size:2rem;
+    font-weight:700;
+    color:rgb(248, 12, 12);
+    font-style: italic;
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px){
+
+.main__container{
+    width:90%;
+    padding:2rem 0;
+
+}
+.flames__container{
+    padding:1rem 1rem;
+}
+
+label{
+    font-size:2rem;
+}
+
+#user__input,
+#partner__name--input{
+    padding:2rem 2rem;
+    font-size:1.5rem;
+}
+
+.result{
+    font-size:1.5rem;
+}
+
+
+
+
+}
