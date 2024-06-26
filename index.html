@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>VK_FLAMES</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,27 +13,31 @@
      <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
+    <h1>FLAMES</h1>
     <div class="main__container">
+      <!-- input from user -->
         <form class="flames__container">
             <div class="name__box">
                 <label for="user__input">yourname</label>
-                <input type="text" id = "user__input" placeholder="Enter your name here" class ="form-control"/>
+                <input type="text" id = "user__input" placeholder="Enter your name" class ="form-control"/>
                 <span class="errText" id = "usernameErr"></span>
             </div>
     
             <div class="name__box">
                 <label for="partner__name--input">Partnername</label>
-                <input type="text" id = "partner__name--input" placeholder="Enter your partner's name here" class ="form-control"/>
+                <input type="text" id = "partner__name--input" placeholder="Enter your partner's name" class ="form-control"/>
                 <span class ="errText" id ="partnernameErr"></span>
             </div>
     
         </form>
-    
-        <button class = "check__btn" id ="check__btn">Check</button>
-        <div class="result__cont">
-            <p class = "result" id = "result"></p>
-
-        </div>
+      <!-- check button-->
+        <button class = "check__btn mb-3" id ="check__btn">Check</button>
+      <!-- spinner  -->
+        <div class="loader display_none" id ="spinner"></div>
+      
+        <!-- result -->
+        <p class = "result mt-3" id = "result"></p>
+       
 
     </div>
 
