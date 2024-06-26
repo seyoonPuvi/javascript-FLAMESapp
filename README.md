@@ -9,7 +9,7 @@ How It Works
 1)Name Input: Players input their names.
 2)Letter Calculation: The game removes common letters between the two names.
 3)Counting Letters: The number of remaining letters is calculated.
-4)FLAMES Calculation: Using the count, the game iterates through the FLAMES acronym to predict the relationship.
+4)FLAMES Calculation: Using the count, the game iterates through the FLAMES acronym to  predict the relationship.
 
 Project Features
 
